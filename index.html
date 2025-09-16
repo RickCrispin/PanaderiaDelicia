@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Panadería Delicia</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <style>
+    .header-bg { background: url('img/fondo.jpg') center center/cover no-repeat; position: relative; }
+    .header-overlay { background: linear-gradient(90deg, rgba(255,140,0,0.85) 0%, rgba(255,215,0,0.85) 50%, rgba(220,53,69,0.85) 100%); position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 1; }
+    .header-content { position: relative; z-index: 2; }
+    .navbar-gradient { background: linear-gradient(90deg, #ff8c00 0%, #ffd700 60%, #dc3545 100%); }
+    .footer-gradient { background: linear-gradient(90deg, #ff8c00 0%, #ffd700 60%, #dc3545 100%); }
+    .btn-panaderia { background: linear-gradient(90deg, #ff8c00 0%, #ffd700 100%); color: #fff; border: none; }
+    .btn-panaderia:hover { background: linear-gradient(90deg, #ffd700 0%, #ff8c00 100%); color: #fff; }
+    .category-btn.active { box-shadow: 0 0 0 0.2rem #ffd700; }
+  </style>
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="header-bg" style="height: 400px;">
+    <div class="header-overlay"></div>
+    <div class="header-content" style="height: 100%; position: relative; z-index: 2;">
+      <nav class="navbar navbar-expand-lg navbar-gradient navbar-dark shadow-sm">
+        <div class="container">
+          <a class="navbar-brand fw-bold" href="index.html" style="color:#fff;">Panadería Delicia</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="mainNav">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item"><a class="nav-link fw-bold" href="index.html" style="color:#fff;">Inicio</a></li>
+              <li class="nav-item"><a class="nav-link fw-bold" href="productos.html" style="color:#fff;">Productos</a></li>
+              <li class="nav-item"><a class="nav-link fw-bold" href="nosotros.html" style="color:#fff;">Nosotros</a></li>
+              <li class="nav-item"><a class="nav-link fw-bold" href="pedidos.html" style="color:#fff;">Pedidos</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="d-flex align-items-center justify-content-center" style="height: 320px;">
+        <div class="text-center text-white w-100">
+          <h2 class="display-4 fw-bold mb-3">Bienvenido a Panadería Delicia</h2>
+          <p class="lead mb-4">Delicias horneadas con amor cada día</p>
+          <a class="btn btn-panaderia btn-lg fw-bold shadow" href="productos.html">Ver productos</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN INICIO -->
+  <main class="container py-5">
+    <!-- Bienvenida y valores -->
+    <section class="mb-5">
+      <div class="row align-items-center">
+        <div class="col-lg-6 mb-4 mb-lg-0">
+          <h1 class="fw-bold text-danger mb-3">¡Bienvenido!</h1>
+          <p class="lead text-warning mb-4">
+            Descubre el sabor auténtico de nuestra panadería. Productos frescos, artesanales y hechos con pasión.
+          </p>
+          <ul class="list-group list-group-flush mb-4">
+            <li class="list-group-item"><i class="bi bi-check-circle-fill text-success me-2"></i>Ingredientes naturales y frescos</li>
+            <li class="list-group-item"><i class="bi bi-check-circle-fill text-success me-2"></i>Recetas tradicionales y modernas</li>
+            <li class="list-group-item"><i class="bi bi-check-circle-fill text-success me-2"></i>Atención personalizada</li>
+            <li class="list-group-item"><i class="bi bi-check-circle-fill text-success me-2"></i>Promociones exclusivas cada semana</li>
+          </ul>
+          <a href="productos.html" class="btn btn-panaderia btn-lg fw-bold">Explora nuestros productos</a>
+        </div>
+        <div class="col-lg-6 text-center">
+          <img src="img/fondo.jpg" class="img-fluid rounded shadow" alt="Panadería Delicia">
+        </div>
+      </div>
+    </section>
+
+    <!-- Promoción especial -->
+    <section class="promo text-center py-5 bg-light rounded mb-5">
+      <h2 class="fw-bold text-danger">20% de descuento en tu primer pedido</h2>
+      <p class="lead text-warning">¡Aprovecha nuestra promoción especial!</p>
+      <a class="btn btn-panaderia btn-lg fw-bold shadow" href="pedidos.html">Pedir ahora</a>
+    </section>
+
+    <!-- Categorías con botones y productos destacados -->
+    <section class="mb-5">
+      <div class="text-center mb-4">
+        <h2 class="fw-bold text-danger">Productos Destacados</h2>
+        <p class="text-muted">Elige una categoría para ver nuestros favoritos</p>
+      </div>
+      <div class="d-flex justify-content-center gap-2 mb-4 flex-wrap">
+        <button class="category-btn btn btn-outline-warning active fw-bold" data-category="panes">Panes</button>
+        <button class="category-btn btn btn-outline-warning fw-bold" data-category="pizzas">Pizzas</button>
+        <button class="category-btn btn btn-outline-warning fw-bold" data-category="piononos">Piononos</button>
+        <button class="category-btn btn btn-outline-warning fw-bold" data-category="tortas">Tortas</button>
+        <button class="category-btn btn btn-outline-warning fw-bold" data-category="postres">Postres</button>
+        <button class="category-btn btn btn-outline-warning fw-bold" data-category="bizcochos">Bizcochos</button>
+      </div>
+      <div class="row g-4" id="products-grid">
+        <!-- Productos cargados por JS -->
+      </div>
+    </section>
+
+    <!-- Misión, visión y valores -->
+    <section class="mb-5">
+      <div class="row text-center">
+        <div class="col-md-4 mb-4">
+          <div class="card border-warning h-100">
+            <div class="card-body">
+              <h3 class="fw-bold text-warning"><i class="bi bi-star-fill"></i> Misión</h3>
+              <p>
+                Elaborar productos de panificación que, a partir de la calidad y valor nutricional, lleven el mensaje de compartir a todas las familias. Estamos convencidos que cuando compartimos somos más felices.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card border-danger h-100">
+            <div class="card-body">
+              <h3 class="fw-bold text-danger"><i class="bi bi-eye-fill"></i> Visión</h3>
+              <p>
+                Ser la panadería líder en la región, reconocida por la excelencia en nuestros productos, la innovación constante y el compromiso con la satisfacción de nuestros clientes, expandiendo la tradición familiar con cada bocado.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card border-success h-100">
+            <div class="card-body">
+              <h3 class="fw-bold text-success"><i class="bi bi-heart-fill"></i> Valores</h3>
+              <ul class="list-unstyled">
+                <li><i class="bi bi-check-lg"></i> Calidad</li>
+                <li><i class="bi bi-check-lg"></i> Honestidad</li>
+                <li><i class="bi bi-check-lg"></i> Tradición</li>
+                <li><i class="bi bi-check-lg"></i> Innovación</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonios de clientes -->
+    <section class="mb-5">
+      <div class="text-center mb-4">
+        <h2 class="fw-bold text-danger">Lo que dicen nuestros clientes</h2>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-md-4 mb-3">
+          <div class="card border-warning shadow-sm">
+            <div class="card-body">
+              <p class="fst-italic">"El pan artesanal es delicioso y siempre fresco. ¡Recomiendo la pizza americana!"</p>
+              <div class="d-flex align-items-center justify-content-center">
+                <img src="img/testimonio1.jpg" alt="Cliente 1" class="rounded-circle me-2" width="40" height="40">
+                <span class="fw-bold">María G.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-3">
+          <div class="card border-danger shadow-sm">
+            <div class="card-body">
+              <p class="fst-italic">"La atención es excelente y los piononos son los mejores que he probado."</p>
+              <div class="d-flex align-items-center justify-content-center">
+                <img src="img/testimonio2.jpg" alt="Cliente 2" class="rounded-circle me-2" width="40" height="40">
+                <span class="fw-bold">Carlos P.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-3">
+          <div class="card border-success shadow-sm">
+            <div class="card-body">
+              <p class="fst-italic">"Me encanta la variedad de postres y bizcochos. ¡Siempre vuelvo por más!"</p>
+              <div class="d-flex align-items-center justify-content-center">
+                <img src="img/testimonio3.jpg" alt="Cliente 3" class="rounded-circle me-2" width="40" height="40">
+                <span class="fw-bold">Lucía R.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer text-light pt-5 pb-3 footer-gradient">
+    <div class="container">
+      <div class="row text-center text-md-start">
+        <div class="col-md-4 mb-4">
+          <h5><i class="bi bi-telephone-fill me-2"></i>Contacto</h5>
+          <p><i class="bi bi-phone"></i> 987 654 321</p>
+          <p><i class="bi bi-envelope"></i> panaderiadelicia@gmail.com</p>
+        </div>
+        <div class="col-md-4 mb-4">
+          <h5><i class="bi bi-share-fill me-2"></i>Redes</h5>
+          <p>
+            <a href="#" class="text-light text-decoration-none me-2"><i class="bi bi-facebook"></i> Facebook</a>
+            <a href="#" class="text-light text-decoration-none me-2"><i class="bi bi-instagram"></i> Instagram</a>
+            <a href="#" class="text-light text-decoration-none"><i class="bi bi-whatsapp"></i> WhatsApp</a>
+          </p>
+        </div>
+        <div class="col-md-4 mb-4">
+          <h5><i class="bi bi-compass me-2"></i>Explora</h5>
+          <p>
+            <a href="index.html" class="text-light text-decoration-none me-2">Inicio</a>
+            <a href="productos.html" class="text-light text-decoration-none me-2">Productos</a>
+            <a href="nosotros.html" class="text-light text-decoration-none me-2">Nosotros</a>
+            <a href="pedidos.html" class="text-light text-decoration-none">Pedidos</a>
+          </p>
+        </div>
+      </div>
+      <hr class="border-light">
+      <p class="copy text-center mt-3 mb-0">&copy; 2025 Panadería Delicia. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- Productos destacados por categoría (JS) -->
+  <script>
+    const productsByCategory = {
+      panes: [
+        { name: "Pan Artesanal", image: "img/pan.jpg", price: "S/4.00" },
+        { name: "Pan Francés", image: "img/Panfrances.jpg", price: "S/3.50" },
+        { name: "Pan Ciabatta", image: "img/Ciabatta.png", price: "S/2.50" }
+      ],
+      pizzas: [
+        { name: "Pizza Americana", image: "img/pizzascaseras.jpg", price: "S/30.00" },
+        { name: "Pizza Pepperoni", image: "img/pepe.jpg", price: "S/32.00" },
+        { name: "Pizza Hawaiana", image: "img/hawa.avif", price: "S/38.00" }
+      ],
+      piononos: [
+        { name: "Pionono de Manjar", image: "img/pionono.jpg", price: "S/12.00" },
+        { name: "Pionono de Chocolate", image: "img/chocolate.avif", price: "S/15.00" },
+        { name: "Pionono de Fresa", image: "img/fresa.jpg", price: "S/15.00" }
+      ],
+      tortas: [
+        { name: "Torta de Chocolate", image: "img/tortachocolate.jpg", price: "S/32.00" },
+        { name: "Torta Selva Negra", image: "img/selva.webp", price: "S/34.00" },
+        { name: "Torta Tres Leches", image: "img/3leches.jpg", price: "S/35.00" }
+      ],
+      postres: [
+        { name: "Pye de Manzana", image: "img/piedemanzana.jpg", price: "S/10.00" },
+        { name: "Picarones", image: "img/picarones.jpg", price: "S/6.50" },
+        { name: "Mazamorra Morada", image: "img/morada.jpg", price: "S/7.00" }
+      ],
+      bizcochos: [
+        { name: "Queque de Vainilla", image: "img/keke.jpg", price: "S/7.00" },
+        { name: "Queque de Zanahoria", image: "img/zana.jpg", price: "S/7.50" },
+        { name: "Queque de Naranja", image: "img/naran.jpg", price: "S/7.50" }
+      ]
+    };
+
+    let activeCategory = 'panes';
+
+    document.addEventListener('DOMContentLoaded', function() {
+      loadProducts(activeCategory);
+      setupCategoryNavigation();
+    });
+
+    function setupCategoryNavigation() {
+      const categoryButtons = document.querySelectorAll('.category-btn');
+      categoryButtons.forEach(button => {
+        button.addEventListener('click', function() {
+          categoryButtons.forEach(btn => btn.classList.remove('active'));
+          this.classList.add('active');
+          const category = this.getAttribute('data-category');
+          activeCategory = category;
+          loadProducts(category);
+        });
+      });
+    }
+
+    function loadProducts(category) {
+      const productsGrid = document.getElementById('products-grid');
+      const products = productsByCategory[category];
+      productsGrid.innerHTML = '';
+      products.forEach(product => {
+        const col = document.createElement('div');
+        col.className = 'col-12 col-md-6 col-lg-4';
+        col.innerHTML = `
+          <div class="card h-100 shadow-sm border-warning">
+            <img src="${product.image}" class="card-img-top" alt="${product.name}">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">${product.name}</h5>
+              <span class="fw-bold text-danger mb-2">${product.price}</span>
+              <button class="btn btn-panaderia mt-auto">Agregar</button>
+            </div>
+          </div>
+        `;
+        productsGrid.appendChild(col);
+      });
+    }
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

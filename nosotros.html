@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Nosotros | Panadería Delicia</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <style>
+    .header-bg { background: url('img/fondo.jpg') center center/cover no-repeat; position: relative; }
+    .header-overlay { background: linear-gradient(90deg, rgba(255,140,0,0.85) 0%, rgba(255,215,0,0.85) 50%, rgba(220,53,69,0.85) 100%); position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 1; }
+    .header-content { position: relative; z-index: 2; }
+    .navbar-gradient { background: linear-gradient(90deg, #ff8c00 0%, #ffd700 60%, #dc3545 100%); }
+    .footer-gradient { background: linear-gradient(90deg, #ff8c00 0%, #ffd700 60%, #dc3545 100%); }
+    .btn-panaderia { background: linear-gradient(90deg, #ff8c00 0%, #ffd700 100%); color: #fff; border: none; }
+    .btn-panaderia:hover { background: linear-gradient(90deg, #ffd700 0%, #ff8c00 100%); color: #fff; }
+  </style>
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="header-bg" style="height: 400px;">
+    <div class="header-overlay"></div>
+    <div class="header-content" style="height: 100%; position: relative; z-index: 2;">
+      <nav class="navbar navbar-expand-lg navbar-gradient navbar-dark shadow-sm">
+        <div class="container">
+          <a class="navbar-brand fw-bold" href="index.html" style="color:#fff;">Panadería Delicia</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="mainNav">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item"><a class="nav-link fw-bold" href="index.html" style="color:#fff;">Inicio</a></li>
+              <li class="nav-item"><a class="nav-link fw-bold" href="productos.html" style="color:#fff;">Productos</a></li>
+              <li class="nav-item"><a class="nav-link fw-bold" href="nosotros.html" style="color:#fff;">Nosotros</a></li>
+              <li class="nav-item"><a class="nav-link fw-bold" href="pedidos.html" style="color:#fff;">Pedidos</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="d-flex align-items-center justify-content-center" style="height: 320px;">
+        <div class="text-center text-white w-100">
+          <h2 class="display-4 fw-bold mb-3">Sobre Nosotros</h2>
+          <p class="lead mb-4">Conoce nuestra historia y lo que nos impulsa a seguir adelante</p>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- MAIN NOSOTROS -->
+  <main class="container py-5">
+    <div class="row text-center mb-5">
+      <h2 class="display-4 fw-bold pb-3 border-bottom border-danger text-danger">Sobre Nosotros</h2>
+      <p class="lead text-warning">Conoce nuestra historia y lo que nos impulsa a seguir adelante.</p>
+    </div>
+    <div class="row text-center mb-5 py-4">
+      <div class="col-md-6 mb-4">
+        <h3 class="fw-bold text-warning">Misión</h3>
+        <p class="px-md-5">
+          Elaborar productos de panificación que, a partir de la calidad y valor nutricional, lleven el mensaje de compartir a todas las familias. Estamos convencidos que cuando compartimos somos más felices.
+        </p>
+      </div>
+      <div class="col-md-6 mb-4">
+        <h3 class="fw-bold text-danger">Visión</h3>
+        <p class="px-md-5">
+          Ser la panadería líder en la región, reconocida por la excelencia en nuestros productos, la innovación constante y el compromiso con la satisfacción de nuestros clientes, expandiendo la tradición familiar con cada bocado.
+        </p>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-md-10 text-center">
+        <h3 class="fw-bold text-warning">Nosotros</h3>
+        <div class="p-4 rounded-3 bg-light">
+          <p>
+            En Dulce Encanto, creemos que cada momento especial merece un sabor inolvidable.
+            Somos una pastelería artesanal dedicada a crear postres que combinan ingredientes frescos, recetas tradicionales y un toque de creatividad que los hace únicos.
+          </p>
+          <p>
+            Nuestro equipo de reposteros trabaja con pasión para elaborar tortas, cupcakes, galletas y postres personalizados que no solo conquistan el paladar, sino también la vista. Cada creación está hecha a mano, cuidando cada detalle para que disfrutes una experiencia dulce desde el primer vistazo hasta el último bocado.
+          </p>
+          <p>
+            Ya sea que busques celebrar un cumpleaños, un aniversario o simplemente darte un gustito, en Dulce Encanto encontrarás el postre perfecto para cada ocasión.
+            Porque para nosotros, cada día es una oportunidad para endulzar tu vida.
+          </p>
+        </div>
+      </div>
+    </div>
+  </main>
+  <!-- FOOTER -->
+  <footer class="footer text-light pt-5 pb-3 footer-gradient">
+    <div class="container">
+      <div class="row text-center text-md-start">
+        <div class="col-md-4 mb-4">
+          <h5><i class="bi bi-telephone-fill me-2"></i>Contacto</h5>
+          <p><i class="bi bi-phone"></i> 987 654 321</p>
+          <p><i class="bi bi-envelope"></i> panaderiadelicia@gmail.com</p>
+        </div>
+        <div class="col-md-4 mb-4">
+          <h5><i class="bi bi-share-fill me-2"></i>Redes</h5>
+          <p>
+            <a href="#" class="text-light text-decoration-none me-2"><i class="bi bi-facebook"></i> Facebook</a>
+            <a href="#" class="text-light text-decoration-none me-2"><i class="bi bi-instagram"></i> Instagram</a>
+            <a href="#" class="text-light text-decoration-none"><i class="bi bi-whatsapp"></i> WhatsApp</a>
+          </p>
+        </div>
+        <div class="col-md-4 mb-4">
+          <h5><i class="bi bi-compass me-2"></i>Explora</h5>
+          <p>
+            <a href="index.html" class="text-light text-decoration-none me-2">Inicio</a>
+            <a href="productos.html" class="text-light text-decoration-none me-2">Productos</a>
+            <a href="nosotros.html" class="text-light text-decoration-none me-2">Nosotros</a>
+            <a href="pedidos.html" class="text-light text-decoration-none">Pedidos</a>
+          </p>
+        </div>
+      </div>
+      <hr class="border-light">
+      <p class="copy text-center mt-3 mb-0">&copy; 2025 Panadería Delicia. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
