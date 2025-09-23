@@ -1,281 +1,324 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>Panadería Delicia</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
-  <link rel="stylesheet" href="estilos.css">
+    <meta charset="UTF-8">
+    <title>Panadería Delicia</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="productos.js" async></script>
+    <link rel="stylesheet" href="productos.css">
 </head>
 <body>
-  <!-- HEADER -->
-  <header class="header-bg" style="height: 400px;">
-    <div class="header-overlay"></div>
-    <div class="header-content" style="height: 100%; position: relative; z-index: 2;">
-      <nav class="navbar navbar-expand-lg navbar-gradient navbar-dark shadow-sm">
+    <!-- HEADER -->
+    <header class="header-bg" style="height: 400px;">
+        <div class="header-overlay"></div>
+        <div class="header-content" style="height: 100%; position: relative; z-index: 2;">
+        <nav class="navbar navbar-expand-lg navbar-gradient navbar-dark shadow-sm">
+            <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html" style="color:#fff;">Panadería Delicia</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item"><a class="nav-link fw-bold" href="index.html" style="color:#fff;">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link fw-bold" href="productos.html" style="color:#fff;">Productos</a></li>
+                <li class="nav-item"><a class="nav-link fw-bold" href="nosotros.html" style="color:#fff;">Nosotros</a></li>
+                <li class="nav-item"><a class="nav-link fw-bold" href="pedidos.html" style="color:#fff;">Pedidos</a></li>
+                </ul>
+            </div>
+            </div>
+        </nav>
+        <div class="d-flex align-items-center justify-content-center" style="height: 320px;">
+            <div class="text-center text-white w-100">
+            <h2 class="display-4 fw-bold mb-3">Nuestros Productos</h2>
+            <p class="lead mb-4">Elige entre panes, pizzas, piononos, tortas, postres y bizcochos</p>
+            </div>
+        </div>
+        </div>
+    </header>
+
+    <!-- BARRA DE BUSQUEDA -->
+    <nav class="navbar bg-body-tertiary">
+        <div class="container d-flex justify-content-center">
+            <form class="d-flex w-50" role="search">
+            <input class="form-control me-2" type="search" placeholder="Buscar producto..." aria-label="Search" />
+            <button class="btn btn-outline-success" type="submit">Buscar</button>
+            </form>
+        </div>
+    </nav>
+
+    <!-- PRODUCTOS + CARRITO -->
+    <main class="container py-5">
+        <m class="productos-con-carrito d-flex gap-4 align-items-start">
+            
+            <!-- Listado de productos -->
+            <div class="flex-grow-1">
+                <h2 class="text-start ms-2 mb-4 fw-bold text-warning">Top Productos</h2>
+
+                <!-- Panes -->
+                <h4 class="fw-bold text-danger mb-3">Panes</h4>
+                <div class="row row-cols-1 row-cols-md-3 g-4 mb-4">
+                    <div class="col">
+                        <div class="card h-100 shadow-sm border-warning">
+                        <img src="img/pan.jpg" class="card-img-top" alt="Pan Artesanal">
+                        <div class="card-body">
+                            <h5 class="card-title">Pan Artesanal</h5>
+                            <p class="card-text">$ 4.00</p>
+                            <button class="btn btn-panaderia w-100">Agregar</button>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 shadow-sm border-warning">
+                        <img src="img/Panfrances.jpg" class="card-img-top" alt="Pan Francés">
+                        <div class="card-body">
+                            <h5 class="card-title">Pan Francés</h5>
+                            <p class="card-text">$ 3.50</p>
+                            <button class="btn btn-panaderia w-100">Agregar</button>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 shadow-sm border-warning">
+                        <img src="img/Ciabatta.png" class="card-img-top" alt="Pan Ciabatta">
+                        <div class="card-body">
+                            <h5 class="card-title">Pan Ciabatta</h5>
+                            <p class="card-text">$ 2.50</p>
+                            <button class="btn btn-panaderia w-100">Agregar</button>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pizzas -->
+        <h4 class="fw-bold text-danger mb-3">Pizzas</h4>
+        <div class="row row-cols-1 row-cols-md-3 g-4 mb-4">
+        <div class="col">
+            <div class="card h-100 shadow-sm border-warning">
+            <img src="img/pizzascaseras.jpg" class="card-img-top" alt="Pizza Americana">
+            <div class="card-body">
+                <h5 class="card-title">Pizza Americana</h5>
+                <p class="card-text">$ 30.00</p>
+                <button class="btn btn-panaderia w-100">Agregar</button>
+            </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100 shadow-sm border-warning">
+            <img src="img/pepe.jpg" class="card-img-top" alt="Pizza Pepperoni">
+            <div class="card-body">
+                <h5 class="card-title">Pizza Pepperoni</h5>
+                <p class="card-text">$ 32.00</p>
+                <button class="btn btn-panaderia w-100">Agregar</button>
+            </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100 shadow-sm border-warning">
+            <img src="img/hawa.avif" class="card-img-top" alt="Pizza Hawaiana">
+            <div class="card-body">
+                <h5 class="card-title">Pizza Hawaiana</h5>
+                <p class="card-text">$ 38.00</p>
+                <button class="btn btn-panaderia w-100">Agregar</button>
+            </div>
+            </div>
+        </div>
+        </div>
+        <!-- Piononos -->
+        <h4 class="fw-bold text-danger mb-3">Piononos</h4>
+        <div class="row row-cols-1 row-cols-md-3 g-4 mb-4">
+        <div class="col">
+            <div class="card h-100 shadow-sm border-warning">
+            <img src="img/pionono.jpg" class="card-img-top" alt="Pionono de Manjar">
+            <div class="card-body">
+                <h5 class="card-title">Pionono de Manjar</h5>
+                <p class="card-text">$ 12.00</p>
+                <button class="btn btn-panaderia w-100">Agregar</button>
+            </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100 shadow-sm border-warning">
+            <img src="img/chocolate.avif" class="card-img-top" alt="Pionono de Chocolate">
+            <div class="card-body">
+                <h5 class="card-title">Pionono de Chocolate</h5>
+                <p class="card-text">$ 15.00</p>
+                <button class="btn btn-panaderia w-100">Agregar</button>
+            </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100 shadow-sm border-warning">
+            <img src="img/fresa.jpg" class="card-img-top" alt="Pionono de Fresa">
+            <div class="card-body">
+                <h5 class="card-title">Pionono de Fresa</h5>
+                <p class="card-text">$ 15.00</p>
+                <button class="btn btn-panaderia w-100">Agregar</button>
+            </div>
+            </div>
+        </div>
+        </div>
+        <!-- Tortas -->
+        <h4 class="fw-bold text-danger mb-3">Tortas</h4>
+        <div class="row row-cols-1 row-cols-md-3 g-4 mb-4">
+        <div class="col">
+            <div class="card h-100 shadow-sm border-warning">
+            <img src="img/tortachocolate.jpg" class="card-img-top" alt="Torta de Chocolate">
+            <div class="card-body">
+                <h5 class="card-title">Torta de Chocolate</h5>
+                <p class="card-text">$ 32.00</p>
+                <button class="btn btn-panaderia w-100">Agregar</button>
+            </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100 shadow-sm border-warning">
+            <img src="img/selva.webp" class="card-img-top" alt="Torta Selva Negra">
+            <div class="card-body">
+                <h5 class="card-title">Torta Selva Negra</h5>
+                <p class="card-text">$ 34.00</p>
+                <button class="btn btn-panaderia w-100">Agregar</button>
+            </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100 shadow-sm border-warning">
+            <img src="img/3leches.jpg" class="card-img-top" alt="Torta Tres Leches">
+            <div class="card-body">
+                <h5 class="card-title">Torta Tres Leches</h5>
+                <p class="card-text">$ 35.00</p>
+                <button class="btn btn-panaderia w-100">Agregar</button>
+            </div>
+            </div>
+        </div>
+        </div>
+        <!-- Postres -->
+        <h4 class="fw-bold text-danger mb-3">Postres</h4>
+        <div class="row row-cols-1 row-cols-md-3 g-4 mb-4">
+        <div class="col">
+            <div class="card h-100 shadow-sm border-warning">
+            <img src="img/piedemanzana.jpg" class="card-img-top" alt="Pye de Manzana">
+            <div class="card-body">
+                <h5 class="card-title">Pye de Manzana</h5>
+                <p class="card-text">$ 10.00</p>
+                <button class="btn btn-panaderia w-100">Agregar</button>
+            </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100 shadow-sm border-warning">
+            <img src="img/picarones.jpg" class="card-img-top" alt="Picarones">
+            <div class="card-body">
+                <h5 class="card-title">Picarones</h5>
+                <p class="card-text">$ 6.50</p>
+                <button class="btn btn-panaderia w-100">Agregar</button>
+            </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100 shadow-sm border-warning">
+            <img src="img/morada.jpg" class="card-img-top" alt="Mazamorra Morada">
+            <div class="card-body">
+                <h5 class="card-title">Mazamorra Morada</h5>
+                <p class="card-text">$ 7.00</p>
+                <button class="btn btn-panaderia w-100">Agregar</button>
+            </div>
+            </div>
+        </div>
+        </div>
+        <!-- Bizcochos -->
+        <h4 class="fw-bold text-danger mb-3">Bizcochos</h4>
+        <div class="row row-cols-1 row-cols-md-3 g-4 mb-4">
+        <div class="col">
+            <div class="card h-100 shadow-sm border-warning">
+            <img src="img/keke.jpg" class="card-img-top" alt="Queque de Vainilla">
+            <div class="card-body">
+                <h5 class="card-title">Queque de Vainilla</h5>
+                <p class="card-text">$ 7.00</p>
+                <button class="btn btn-panaderia w-100">Agregar</button>
+            </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100 shadow-sm border-warning">
+            <img src="img/zana.jpg" class="card-img-top" alt="Queque de Zanahoria">
+            <div class="card-body">
+                <h5 class="card-title">Queque de Zanahoria</h5>
+                <p class="card-text">$ 7.50</p>
+                <button class="btn btn-panaderia w-100">Agregar</button>
+            </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100 shadow-sm border-warning">
+            <img src="img/naran.jpg" class="card-img-top" alt="Queque de Naranja">
+            <div class="card-body">
+                <h5 class="card-title">Queque de Naranja</h5>
+                <p class="card-text">$ 7.50</p>
+                <button class="btn btn-panaderia w-100">Agregar</button>
+            </div>
+            </div>
+        </div>
+        </div>
+            </div>
+
+            <!-- Carrito -->
+            <aside class="carrito border rounded p-3 bg-white shadow-sm" style="width: 320px; position: sticky; top: 20px;">
+                <div class="header-carrito text-center mb-3">
+                    <h2>Tu carrito</h2>
+                </div>
+
+                <div class="carrito-items">
+                    <!-- Aquí se insertarán dinámicamente los productos -->
+                </div>
+
+                <div class="carrito-total border-top pt-3 mt-3">
+                    <div class="fila d-flex justify-content-between">
+                        <strong>Tu Total</strong>
+                        <span class="carrito-precio-total">$ 0.00</span>
+                    </div>
+                    <button class="btn btn-warning w-100 mt-3 fw-bold">
+                        Pagar <i class="fa-solid fa-bag-shopping"></i>
+                    </button>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer text-light pt-5 pb-3 footer-gradient">
         <div class="container">
-          <a class="navbar-brand fw-bold" href="index.html" style="color:#fff;">Panadería Delicia</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="mainNav">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-              <li class="nav-item"><a class="nav-link fw-bold" href="index.html" style="color:#fff;">Inicio</a></li>
-              <li class="nav-item"><a class="nav-link fw-bold" href="productos.html" style="color:#fff;">Productos</a></li>
-              <li class="nav-item"><a class="nav-link fw-bold" href="nosotros.html" style="color:#fff;">Nosotros</a></li>
-              <li class="nav-item"><a class="nav-link fw-bold" href="pedidos.html" style="color:#fff;">Pedidos</a></li>
-            </ul>
-          </div>
+        <div class="row text-center text-md-start">
+            <div class="col-md-4 mb-4">
+            <h5><i class="bi bi-telephone-fill me-2"></i>Contacto</h5>
+            <p><i class="bi bi-phone"></i> 987 654 321</p>
+            <p><i class="bi bi-envelope"></i> panaderiadelicia@gmail.com</p>
+            </div>
+            <div class="col-md-4 mb-4">
+            <h5><i class="bi bi-share-fill me-2"></i>Redes</h5>
+            <p>
+                <a href="#" class="text-light text-decoration-none me-2"><i class="bi bi-facebook"></i> Facebook</a>
+                <a href="#" class="text-light text-decoration-none me-2"><i class="bi bi-instagram"></i> Instagram</a>
+                <a href="#" class="text-light text-decoration-none"><i class="bi bi-whatsapp"></i> WhatsApp</a>
+            </p>
+            </div>
+            <div class="col-md-4 mb-4">
+            <h5><i class="bi bi-compass me-2"></i>Explora</h5>
+            <p>
+                <a href="index.html" class="text-light text-decoration-none me-2">Inicio</a>
+                <a href="productos.html" class="text-light text-decoration-none me-2">Productos</a>
+                <a href="nosotros.html" class="text-light text-decoration-none me-2">Nosotros</a>
+                <a href="pedidos.html" class="text-light text-decoration-none">Pedidos</a>
+            </p>
+            </div>
         </div>
-      </nav>
-      <div class="d-flex align-items-center justify-content-center" style="height: 320px;">
-        <div class="text-center text-white w-100">
-          <h2 class="display-4 fw-bold mb-3">Nuestros Productos</h2>
-          <p class="lead mb-4">Elige entre panes, pizzas, piononos, tortas, postres y bizcochos</p>
+        <hr class="border-light">
+        <p class="copy text-center mt-3 mb-0">&copy; 2025 Panadería Delicia. Todos los derechos reservados.</p>
         </div>
-      </div>
-    </div>
-  </header>
-  <!-- PRODUCTOS LISTADO COMPLETO -->
-  <main class="container py-5">
-    <h2 class="text-start ms-2 mb-4 fw-bold text-warning">Top Productos</h2>
-    <!-- Panes -->
-    <h4 class="fw-bold text-danger mb-3">Panes</h4>
-    <div class="row row-cols-1 row-cols-md-3 g-4 mb-4">
-      <div class="col">
-        <div class="card h-100 shadow-sm border-warning">
-          <img src="img/pan.jpg" class="card-img-top" alt="Pan Artesanal">
-          <div class="card-body">
-            <h5 class="card-title">Pan Artesanal</h5>
-            <p class="card-text">S/4.00</p>
-            <button class="btn btn-panaderia w-100">Agregar</button>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card h-100 shadow-sm border-warning">
-          <img src="img/Panfrances.jpg" class="card-img-top" alt="Pan Francés">
-          <div class="card-body">
-            <h5 class="card-title">Pan Francés</h5>
-            <p class="card-text">S/3.50</p>
-            <button class="btn btn-panaderia w-100">Agregar</button>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card h-100 shadow-sm border-warning">
-          <img src="img/Ciabatta.png" class="card-img-top" alt="Pan Ciabatta">
-          <div class="card-body">
-            <h5 class="card-title">Pan Ciabatta</h5>
-            <p class="card-text">S/2.50</p>
-            <button class="btn btn-panaderia w-100">Agregar</button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Pizzas -->
-    <h4 class="fw-bold text-danger mb-3">Pizzas</h4>
-    <div class="row row-cols-1 row-cols-md-3 g-4 mb-4">
-      <div class="col">
-        <div class="card h-100 shadow-sm border-warning">
-          <img src="img/pizzascaseras.jpg" class="card-img-top" alt="Pizza Americana">
-          <div class="card-body">
-            <h5 class="card-title">Pizza Americana</h5>
-            <p class="card-text">S/30.00</p>
-            <button class="btn btn-panaderia w-100">Agregar</button>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card h-100 shadow-sm border-warning">
-          <img src="img/pepe.jpg" class="card-img-top" alt="Pizza Pepperoni">
-          <div class="card-body">
-            <h5 class="card-title">Pizza Pepperoni</h5>
-            <p class="card-text">S/32.00</p>
-            <button class="btn btn-panaderia w-100">Agregar</button>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card h-100 shadow-sm border-warning">
-          <img src="img/hawa.avif" class="card-img-top" alt="Pizza Hawaiana">
-          <div class="card-body">
-            <h5 class="card-title">Pizza Hawaiana</h5>
-            <p class="card-text">S/38.00</p>
-            <button class="btn btn-panaderia w-100">Agregar</button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Piononos -->
-    <h4 class="fw-bold text-danger mb-3">Piononos</h4>
-    <div class="row row-cols-1 row-cols-md-3 g-4 mb-4">
-      <div class="col">
-        <div class="card h-100 shadow-sm border-warning">
-          <img src="img/pionono.jpg" class="card-img-top" alt="Pionono de Manjar">
-          <div class="card-body">
-            <h5 class="card-title">Pionono de Manjar</h5>
-            <p class="card-text">S/12.00</p>
-            <button class="btn btn-panaderia w-100">Agregar</button>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card h-100 shadow-sm border-warning">
-          <img src="img/chocolate.avif" class="card-img-top" alt="Pionono de Chocolate">
-          <div class="card-body">
-            <h5 class="card-title">Pionono de Chocolate</h5>
-            <p class="card-text">S/15.00</p>
-            <button class="btn btn-panaderia w-100">Agregar</button>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card h-100 shadow-sm border-warning">
-          <img src="img/fresa.jpg" class="card-img-top" alt="Pionono de Fresa">
-          <div class="card-body">
-            <h5 class="card-title">Pionono de Fresa</h5>
-            <p class="card-text">S/15.00</p>
-            <button class="btn btn-panaderia w-100">Agregar</button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Tortas -->
-    <h4 class="fw-bold text-danger mb-3">Tortas</h4>
-    <div class="row row-cols-1 row-cols-md-3 g-4 mb-4">
-      <div class="col">
-        <div class="card h-100 shadow-sm border-warning">
-          <img src="img/tortachocolate.jpg" class="card-img-top" alt="Torta de Chocolate">
-          <div class="card-body">
-            <h5 class="card-title">Torta de Chocolate</h5>
-            <p class="card-text">S/32.00</p>
-            <button class="btn btn-panaderia w-100">Agregar</button>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card h-100 shadow-sm border-warning">
-          <img src="img/selva.webp" class="card-img-top" alt="Torta Selva Negra">
-          <div class="card-body">
-            <h5 class="card-title">Torta Selva Negra</h5>
-            <p class="card-text">S/34.00</p>
-            <button class="btn btn-panaderia w-100">Agregar</button>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card h-100 shadow-sm border-warning">
-          <img src="img/3leches.jpg" class="card-img-top" alt="Torta Tres Leches">
-          <div class="card-body">
-            <h5 class="card-title">Torta Tres Leches</h5>
-            <p class="card-text">S/35.00</p>
-            <button class="btn btn-panaderia w-100">Agregar</button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Postres -->
-    <h4 class="fw-bold text-danger mb-3">Postres</h4>
-    <div class="row row-cols-1 row-cols-md-3 g-4 mb-4">
-      <div class="col">
-        <div class="card h-100 shadow-sm border-warning">
-          <img src="img/piedemanzana.jpg" class="card-img-top" alt="Pye de Manzana">
-          <div class="card-body">
-            <h5 class="card-title">Pye de Manzana</h5>
-            <p class="card-text">S/10.00</p>
-            <button class="btn btn-panaderia w-100">Agregar</button>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card h-100 shadow-sm border-warning">
-          <img src="img/picarones.jpg" class="card-img-top" alt="Picarones">
-          <div class="card-body">
-            <h5 class="card-title">Picarones</h5>
-            <p class="card-text">S/6.50</p>
-            <button class="btn btn-panaderia w-100">Agregar</button>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card h-100 shadow-sm border-warning">
-          <img src="img/morada.jpg" class="card-img-top" alt="Mazamorra Morada">
-          <div class="card-body">
-            <h5 class="card-title">Mazamorra Morada</h5>
-            <p class="card-text">S/7.00</p>
-            <button class="btn btn-panaderia w-100">Agregar</button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Bizcochos -->
-    <h4 class="fw-bold text-danger mb-3">Bizcochos</h4>
-    <div class="row row-cols-1 row-cols-md-3 g-4 mb-4">
-      <div class="col">
-        <div class="card h-100 shadow-sm border-warning">
-          <img src="img/keke.jpg" class="card-img-top" alt="Queque de Vainilla">
-          <div class="card-body">
-            <h5 class="card-title">Queque de Vainilla</h5>
-            <p class="card-text">S/7.00</p>
-            <button class="btn btn-panaderia w-100">Agregar</button>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card h-100 shadow-sm border-warning">
-          <img src="img/zana.jpg" class="card-img-top" alt="Queque de Zanahoria">
-          <div class="card-body">
-            <h5 class="card-title">Queque de Zanahoria</h5>
-            <p class="card-text">S/7.50</p>
-            <button class="btn btn-panaderia w-100">Agregar</button>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card h-100 shadow-sm border-warning">
-          <img src="img/naran.jpg" class="card-img-top" alt="Queque de Naranja">
-          <div class="card-body">
-            <h5 class="card-title">Queque de Naranja</h5>
-            <p class="card-text">S/7.50</p>
-            <button class="btn btn-panaderia w-100">Agregar</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </main>
-  <!-- FOOTER -->
-  <footer class="footer text-light pt-5 pb-3 footer-gradient">
-    <div class="container">
-      <div class="row text-center text-md-start">
-        <div class="col-md-4 mb-4">
-          <h5><i class="bi bi-telephone-fill me-2"></i>Contacto</h5>
-          <p><i class="bi bi-phone"></i> 987 654 321</p>
-          <p><i class="bi bi-envelope"></i> panaderiadelicia@gmail.com</p>
-        </div>
-        <div class="col-md-4 mb-4">
-          <h5><i class="bi bi-share-fill me-2"></i>Redes</h5>
-          <p>
-            <a href="#" class="text-light text-decoration-none me-2"><i class="bi bi-facebook"></i> Facebook</a>
-            <a href="#" class="text-light text-decoration-none me-2"><i class="bi bi-instagram"></i> Instagram</a>
-            <a href="#" class="text-light text-decoration-none"><i class="bi bi-whatsapp"></i> WhatsApp</a>
-          </p>
-        </div>
-        <div class="col-md-4 mb-4">
-          <h5><i class="bi bi-compass me-2"></i>Explora</h5>
-          <p>
-            <a href="index.html" class="text-light text-decoration-none me-2">Inicio</a>
-            <a href="productos.html" class="text-light text-decoration-none me-2">Productos</a>
-            <a href="nosotros.html" class="text-light text-decoration-none me-2">Nosotros</a>
-            <a href="pedidos.html" class="text-light text-decoration-none">Pedidos</a>
-          </p>
-        </div>
-      </div>
-      <hr class="border-light">
-      <p class="copy text-center mt-3 mb-0">&copy; 2025 Panadería Delicia. Todos los derechos reservados.</p>
-    </div>
-  </footer>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
-``` 
