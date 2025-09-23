@@ -75,6 +75,11 @@
     padding: 30px 0;
 }
 
+.carrito .carrito-items{
+    overflow-y: auto;
+    max-height: 420px;
+}
+
 .carrito .carrito-item{
     display: flex;
     align-items: center;
